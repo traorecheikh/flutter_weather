@@ -1,4 +1,3 @@
-// lib/modules/weather/weather_controller.dart
 import 'package:get/get.dart';
 import 'package:weatherinx/app/data/models/weather_model.dart';
 import 'package:weatherinx/app/data/repositories/weather_repositories.dart';
@@ -8,6 +7,12 @@ class HomeController extends GetxController {
   var weatherModel = Rxn<WeatherModel>();
 
   HomeController(this._weatherRepository);
+
+  @override
+  void onInit() {
+    super.onInit();
+    fetchWeatherByCity("dakar");
+  }
 
   Future<void> fetchWeatherByCity(String cityName) async {
     try {

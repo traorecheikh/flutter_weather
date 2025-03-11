@@ -1,6 +1,5 @@
 // lib/core/services/weather_api_client.dart
 import 'package:weatherapi/weatherapi.dart';
-import 'package:weatherapi/weatherapi.dart' as api; // for easier usage
 import 'package:weatherinx/app/core/constants/api_constants.dart';
 import 'package:weatherinx/app/data/services/exceptions.dart';
 

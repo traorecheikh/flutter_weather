@@ -1,8 +1,6 @@
-// lib/data/repositories/weather_repository.dart
 import 'package:weatherinx/app/data/models/weather_model.dart';
 import 'package:weatherinx/app/data/services/api_client.dart';
 import 'package:weatherinx/app/data/services/exceptions.dart';
-
 
 class WeatherRepository {
   final WeatherApiClient _weatherApiClient;
